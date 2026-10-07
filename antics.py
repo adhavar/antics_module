@@ -6,36 +6,39 @@
 # Kezlyn Margareth
 # Christian Strus
 
-def tautogram():
+def palindrome(sentence):
+    """
+    Check if a word or sentence that reads the same backwards
+    Author: Kezlyn Margareth
+    """
+    if sentence == sentence[::-1]:
+        return True
+    else:
+        return False
+
+def tautogram(sentence):
     """
     Check if a text in which all words start with the same letter
     Author: Kezlyn Margareth
     """
-    sentence = input('Enter your sentence: ').split()
-        
-    letter = sentence[0][0]
+    words = sentence.split()  
+    letter = words[0][0]
 
     if all (word[0] == letter for word in sentence):
-        print("Every words in the sentence starts with the same letter!")
+        return True
     else:
-        print("The words in the sentence don't start with the same letter.")
+      return False
 
-def isogram():
+def isogram(word):
     """
     Check and returns true if a word has no letter of the alphabet occurs more than once
     Author: Kezlyn Margareth
     """
-    word = input('Enter your word: ')
 
-    if len(set(word)) == len(list(word)):
-        print("The word has no repreated letter!")
+    if len(set(word)) == len(word):
+       return True
     else:
-        print("The word has repeated letters")
-        
-
-if __name__== "__main__":
-    tautogram()
-    isogram()
+       return False
 
 
 def abedecerian(word):
