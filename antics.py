@@ -1,5 +1,5 @@
 # CIS-117 Lab2
-# The module contains 6 functions to 
+# The module contains 6 functions to test alphabetical antics.
 # Group #2
 # Group members:
 # Adhamaryz Vargas Atoche
