@@ -1,5 +1,5 @@
 # CIS-117 Lab2
-# Write a description of your module here
+# The module contains 6 functions to 
 # Group #2
 # Group members:
 # Adhamaryz Vargas Atoche
@@ -15,6 +15,22 @@ def palindrome(sentence):
         return True
     else:
         return False
+
+
+def pangram(phrase):
+    '''
+    The function checks if a phrase or sentence contains all 26 letters of the alphabet.
+    Author: Adhamaryz Vargas
+    '''
+
+    alphabet = "abcdefghklmnopqrstuvwxyz"
+
+    for letter in alphabet:
+        if letter.lower() in phrase:
+            continue
+        else:
+            return False 
+    return True
 
 def tautogram(sentence):
     """
