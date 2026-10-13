@@ -37,10 +37,10 @@ def tautogram(sentence):
     Check if a text in which all words start with the same letter
     Author: Kezlyn Margareth
     """
-    words = sentence.split()  
+    words = sentence.lower().split()  
     letter = words[0][0]
 
-    if all (word[0] == letter for word in sentence):
+    if all (word[0] == letter for word in words):
         return True
     else:
       return False
